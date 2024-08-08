@@ -1,0 +1,36 @@
+<!-- create a search menu to filter links with JavaScript. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Menus | Search Menu</title>
+  </head>
+  <body>
+    <!-- input -->
+    <input
+      type="text"
+      id="mySearch"
+      onkeyup="myFunction()"
+      placeholder="Search..."
+      title="Type In a Category"
+    />
+
+    <!-- menu -->
+    <ul id="myMenu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">Javascript</a></li>
+      <li><a href="#">PHP</a></li>
+      <li><a href="#">Python</a></li>
+      <li><a href="#">jQuery</a></li>
+      <li><a href="#">SQL</a></li>
+      <li><a href="#">Bootstrap</a></li>
+      <li><a href="#">Node.js</a></li>
+    </ul>
+
+    <script src="app.js"></script>
+  </body>
+</html>

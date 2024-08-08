@@ -1,0 +1,54 @@
+/* MOBILE FIRST APPROACH DESIGN */
+
+.icon-bar-vertical {
+  width: 90px; /* Setting specific width */
+  background-color: #555; /* Dark Gray Background */
+}
+
+/* VERTICAL OR MOBILE FIRST APPROACH */
+.icon-bar-vertical a {
+  display: block; /* Make the links appear below each other instead of side-by-side */
+
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px; /* Increased font-size - which increases icon size in this case */
+}
+
+.icon-bar-vertical a:hover {
+  background-color: #000;
+}
+
+/* This class can be added dynamically by javascript later */
+.active {
+  background-color: #04aa6d; /* Add an active/current color */
+}
+/* ------------------------------------- */
+
+/* HORIZONTAL - WEB BASED */
+
+.icon-bar-horizontal {
+  width: 100%; /* Setting specific width */
+  background-color: #555; /* Dark Gray Background */
+  overflow: auto;
+}
+
+.icon-bar-horizontal a {
+  float: left; /* Float links side by side */
+  text-align: center;
+  width: 20%; /* Each */
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px; /* Increased font-size - which increases icon size in this case */
+}
+
+.icon-bar-horizontal a:hover {
+  background-color: #000;
+}
+
+/* This class can be added dynamically by javascript later */
+.active {
+  background-color: #04aa6d; /* Add an active/current color */
+}

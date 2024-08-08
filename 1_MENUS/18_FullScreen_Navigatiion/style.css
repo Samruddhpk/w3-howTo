@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  padding: 1rem;
+  margin: 2rem;
+  border: transparent;
+  background-color: black;
+  color: white;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+
+/* slide right */
+/* comment down below overlay class to work */
+/* transform: translateX(-100%); also works*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  height: 100%;
+  width: 0;
+  background-color: black;
+  transition: 0.5s;
+}
+
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 150px;
+  font-size: 4rem;
+  color: gray;
+}
+
+.overlay-content {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 200px;
+}
+
+.overlay-content a {
+  display: block;
+  margin-bottom: 2rem;
+  color: gray;
+  font-size: 2rem;
+}
+
+.overlay a:hover {
+  color: white;
+}
+
+.show-overlay-from-right {
+  /* transform: translateX(0); */
+  width: 100%;
+}
+
+/* slide down */
+/* .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+  background-color: black;
+  transition: 0.5s;
+} */
+
+.show-overlay-from-up {
+  height: 100%;
+}
+
+/* no animate */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  transition: 0.5s;
+  display: none;
+}

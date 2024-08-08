@@ -1,0 +1,51 @@
+/* normal menu icon */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 2rem;
+}
+
+.container1 div {
+  background-color: black;
+  width: 35px;
+  height: 5px;
+  margin: 5px auto;
+}
+
+/* animated */
+.container {
+  display: inline-block;
+  cursor: pointer;
+  padding: 2rem;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  background-color: black;
+  width: 35px;
+  height: 5px;
+  margin: 6px auto;
+  transition: 0.4s ease;
+}
+
+/* Rotate first bar */
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}

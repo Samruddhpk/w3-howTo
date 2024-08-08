@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 2rem;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.vertical-menu {
+  width: 200px;
+  background-color: lightblue;
+  margin: 2rem;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  transition: 0.3s;
+}
+a.active {
+  background-color: blue;
+}
+
+a:hover:not(.active) {
+  color: black;
+  background-color: lightcyan;
+}
+
+/* scroll */
+.vertical-menu-scroll {
+  width: 200px;
+  height: 100px;
+  background-color: black;
+  margin: 2rem;
+  overflow-y: scroll;
+}
