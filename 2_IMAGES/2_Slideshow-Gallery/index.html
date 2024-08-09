@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Images | Slideshow Gallery</title>
+  </head>
+  <body>
+    <div class="slideshow-container">
+      <div class="slide">
+        <div class="number">1 / 6</div>
+        <img src="../assets/images/beach5.jpg" alt="Sunset Beach" />
+      </div>
+      <div class="slide">
+        <div class="number">2 / 6</div>
+        <img src="../assets/images/nature1.jpg" alt="Still Lake" />
+      </div>
+      <div class="slide">
+        <div class="number">3 / 6</div>
+        <img src="../assets/images/beach6.jpg" alt="Sunrise Beach" />
+      </div>
+      <div class="slide">
+        <div class="number">4 / 6</div>
+        <img src="../assets/images/nature2.jpg" alt="Asthetic Flowers" />
+      </div>
+      <div class="slide">
+        <div class="number">5 / 6</div>
+        <img src="../assets/images/nature3.jpg" alt="Cloud Mountains" />
+      </div>
+      <div class="slide">
+        <div class="number">6 / 6</div>
+        <img src="../assets/images/nature4.jpg" alt="Beautiful Landscape" />
+      </div>
+
+      <!-- controllers -->
+      <div class="prev">&#10094;</div>
+      <div class="next">&#10095;</div>
+
+      <!-- caption -->
+      <p id="caption"></p>
+    </div>
+
+    <!-- image row -->
+    <div class="row">
+      <div class="column">
+        <img
+          class="img"
+          src="../assets/images/beach5.jpg"
+          alt="Sunset Beach"
+          onclick="currentSlide(1)"
+        />
+      </div>
+      <div class="column">
+        <img
+          class="img"
+          src="../assets/images/nature1.jpg"
+          alt="Still Lake"
+          onclick="currentSlide(2)"
+        />
+      </div>
+      <div class="column">
+        <img
+          class="img"
+          src="../assets/images/beach6.jpg"
+          alt="Sunrise Beach"
+          onclick="currentSlide(3)"
+        />
+      </div>
+      <div class="column">
+        <img
+          class="img"
+          src="../assets/images/nature2.jpg"
+          alt="Asthetic Flowers"
+          onclick="currentSlide(4)"
+        />
+      </div>
+      <div class="column">
+        <img
+          class="img"
+          src="../assets/images/nature3.jpg"
+          alt="Cloud Mountains"
+          onclick="currentSlide(5)"
+        />
+      </div>
+      <div class="column">
+        <img
+          class="img"
+          src="../assets/images/nature4.jpg"
+          alt="Beautiful Landscape"
+          onclick="currentSlide(6)"
+        />
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

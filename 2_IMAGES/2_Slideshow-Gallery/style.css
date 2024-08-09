@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #212529;
+  padding: 0.5rem 2rem;
+}
+
+.slideshow-container img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  height: 25rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.slideshow-container {
+  overflow: hidden;
+  position: relative;
+  width: 1000px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.slide {
+  display: none;
+}
+
+.number {
+  position: absolute;
+  color: white;
+  font-weight: 700;
+  font-size: 0.75rem;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.prev,
+.next {
+  position: absolute;
+  color: white;
+  z-index: 999;
+  top: 45%;
+  width: auto;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.next {
+  right: 0;
+}
+
+.next:hover,
+.prev:hover {
+  background-color: black;
+}
+
+#caption {
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.column {
+  width: 100%;
+}
+
+.column img {
+  cursor: pointer;
+  opacity: 0.6;
+  height: 80px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.img.active {
+  opacity: 1;
+}
