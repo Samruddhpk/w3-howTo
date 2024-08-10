@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Images | LightBox</title>
+  </head>
+  <body>
+    <h2>Click On Image To Start Slide-show</h2>
+    <!-- images used to open lightbox -->
+    <div class="row">
+      <div class="column">
+        <img
+          src="../assets/images/beach1.jpg"
+          onclick="openModal(); currentSlide(1) "
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="../assets/images/beach2.jpg"
+          onclick="openModal(); currentSlide(2)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="../assets/images/beach3.jpg"
+          onclick="openModal(); currentSlide(3)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="../assets/images/beach4.jpg"
+          onclick="openModal(); currentSlide(4)"
+          class="hover-shadow"
+        />
+      </div>
+    </div>
+    <!-- modal / lightbox -->
+    <div class="modal">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+
+      <div class="modal-content">
+        <div class="slide">
+          <div class="number">1 / 4</div>
+          <img src="../assets/images/beach1.jpg" style="width: 100%" />
+        </div>
+
+        <div class="slide">
+          <div class="number">2 / 4</div>
+          <img src="../assets/images/beach2.jpg" style="width: 100%" />
+        </div>
+
+        <div class="slide">
+          <div class="number">3 / 4</div>
+          <img src="../assets/images/beach3.jpg" style="width: 100%" />
+        </div>
+
+        <div class="slide">
+          <div class="number">4 / 4</div>
+          <img src="../assets/images/beach4.jpg" style="width: 100%" />
+        </div>
+        <!-- next & prev controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- caption -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- thumbnail image controls -->
+        <div class="column">
+          <img
+            src="../assets/images/beach1.jpg"
+            onclick="currentSlide(1) "
+            class="demo"
+            alt="beach"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="../assets/images/beach2.jpg"
+            onclick="currentSlide(2) "
+            class="demo"
+            alt="beach"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="../assets/images/beach3.jpg"
+            onclick="currentSlide(3) "
+            class="demo"
+            alt="beach"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="../assets/images/beach4.jpg"
+            onclick="currentSlide(4) "
+            class="demo"
+            alt="beach"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
