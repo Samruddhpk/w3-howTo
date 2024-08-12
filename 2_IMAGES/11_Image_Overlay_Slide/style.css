@@ -30,7 +30,8 @@ img {
 }
 
 .upDown,
-.leftRight {
+.leftRight,
+.others {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,4 +89,26 @@ img {
 
 .container:hover .overlay.right {
   width: 100%;
+}
+
+/* others */
+.overlay.zoom {
+  height: 100%;
+  width: 100%;
+  transform: scale(0);
+}
+
+.container:hover .overlay.zoom {
+  transform: scale(1);
+}
+
+.overlay.title {
+  bottom: 0;
+  height: 20%;
+  opacity: 0;
+  width: 100%;
+}
+
+.container:hover .overlay.title {
+  opacity: 1;
 }
