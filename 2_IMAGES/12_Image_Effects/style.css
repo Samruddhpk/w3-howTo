@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-wrap: wrap;
+
+  padding: 2rem;
+  gap: 1rem;
+}
+
+img {
+  max-width: 250px;
+  display: block;
+  object-fit: cover;
+  /* border: 0.5px solid black; */
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+.brightness {
+  filter: brightness(200%);
+}
+
+.contrast {
+  filter: contrast(15%);
+  /* filter: contrast(150%); */
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.hue-rotate {
+  filter: hue-rotate(90deg);
+}
+
+.invert {
+  filter: invert(100%);
+}
+
+.opacity {
+  filter: opacity(0.5);
+}
+
+.saturate {
+  filter: saturate(4);
+}
+
+.sepia {
+  filter: sepia(1);
+}
+
+.drop-shadow {
+  filter: drop-shadow(0 0 0.75rem rgb(31, 18, 21));
+}
