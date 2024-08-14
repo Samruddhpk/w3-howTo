@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body,
+html {
+  height: 100%;
+  color: white;
+}
+
+.img {
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/grid-images/vertical/vadim-berg-bAsrDqJ6YLc-unsplash.jpg");
+}
+
+.img2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/grid-images/vertical/haotian-zheng-j6vuzE1hiYw-unsplash.jpg");
+}
+.img3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/grid-images/vertical/pascal-bullan-so8njmqySMI-unsplash.jpg");
+}
+.img4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/grid-images/vertical/lasse-jensen-GvBFNyMdr7g-unsplash.jpg");
+}
+.img5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/grid-images/vertical/the-new-york-public-library-TVuKpFz2d74-unsplash.jpg");
+}
+
+.text {
+  position: fixed;
+  z-index: 999;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #f2f2f2;
+  padding: 3rem;
+  font-size: 3rem;
+  font-weight: bold;
+  width: 300px;
+  text-align: center;
+}
