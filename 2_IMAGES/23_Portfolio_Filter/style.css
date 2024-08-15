@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2rem;
+}
+h2 {
+  margin-bottom: 2rem;
+}
+p {
+  margin-bottom: 1rem;
+}
+
+button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: transparent;
+  background-color: #f1f1f1;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  height: 150px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  justify-items: center;
+}
+
+.column {
+  border-radius: 5px;
+  width: 200px;
+  max-width: 300px;
+  border: 0.5px solid lightgray;
+  display: none;
+}
+
+.content p {
+  padding: 1rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+button.active {
+  background-color: black;
+  color: white;
+}
+.show {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .row {
+    grid-template-columns: repeat(4, auto);
+  }
+  .column {
+    width: auto;
+  }
+  .btn-container {
+    justify-content: start;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h2,
+  p {
+    text-align: center;
+  }
+  .row {
+    grid-template-columns: 1fr;
+  }
+}

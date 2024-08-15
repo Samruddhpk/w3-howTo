@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Images | Filter</title>
+  </head>
+  <body>
+    <h2>My Portfolio</h2>
+    <p>Click on the buttons to filter a category:</p>
+
+    <div class="btn-container">
+      <button class="active" onclick="filterSelection('all')">Show All</button>
+      <button onclick="filterSelection('nature')">Nature</button>
+      <button onclick="filterSelection('car')">Cars</button>
+      <button onclick="filterSelection('people')">People</button>
+    </div>
+
+    <!-- image grid -->
+    <div class="row">
+      <!-- nature -->
+      <div class="column nature">
+        <div class="content">
+          <img src="../assets/images/nature1.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            provident.
+          </p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="../assets/images/nature1.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            provident.
+          </p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="../assets/images/nature1.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            provident.
+          </p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="../assets/images/nature1.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+            provident.
+          </p>
+        </div>
+      </div>
+
+      <!--cars-->
+      <div class="column car">
+        <div class="content">
+          <img
+            src="../assets/grid-images/horizontal/erik-mclean-A6Oul2V4DRY-unsplash.jpg"
+            alt=""
+          />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
+            culpa.
+          </p>
+        </div>
+      </div>
+      <div class="column car">
+        <div class="content">
+          <img
+            src="../assets/grid-images/horizontal/erik-mclean-A6Oul2V4DRY-unsplash.jpg"
+            alt=""
+          />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
+            culpa.
+          </p>
+        </div>
+      </div>
+      <div class="column car">
+        <div class="content">
+          <img
+            src="../assets/grid-images/horizontal/erik-mclean-A6Oul2V4DRY-unsplash.jpg"
+            alt=""
+          />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
+            culpa.
+          </p>
+        </div>
+      </div>
+
+      <!-- people -->
+      <div class="column people">
+        <div class="content">
+          <img src="../assets/avatars/user.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi,
+            numquam?
+          </p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+          <img src="../assets/avatars/user.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi,
+            numquam?
+          </p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+          <img src="../assets/avatars/user.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi,
+            numquam?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
